@@ -6,8 +6,8 @@
 // shippers/brokers.
 
 export const companyInfo = {
-  name: 'EGTex LLC',
-  tagline: 'Family-Owned Trucking & Logistics',
+  name: 'EGTex Broker LLC',
+  tagline: 'Family-Owned Freight Brokerage',
   address: {
     line1: '4028 Edgewater Terrace Ln',
     city: 'Waller',

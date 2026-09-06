@@ -35,7 +35,7 @@ export function Footer() {
         </div>
 
         <div className={styles.col}>
-          <h3>Licensed &amp; Insured</h3>
+          <h3>Licensed &amp; Bonded</h3>
           <ul>
             <li>DOT: {companyInfo.credentials.dot}</li>
             <li>MC: {companyInfo.credentials.mc}</li>
