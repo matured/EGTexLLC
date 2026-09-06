@@ -13,17 +13,31 @@ npm run build     # production build to ./dist
 npm run preview   # preview the production build locally
 ```
 
-## Deployment (GitHub Pages)
+## Deployment (GitHub Pages + custom domain)
 
 This repo deploys automatically via `.github/workflows/deploy.yml` on every
-push to `main`. One-time setup required in the GitHub UI (cannot be done via
-code): go to **Settings → Pages → Source** and select **GitHub Actions**.
+push to `main`. Two one-time setup steps in the GitHub UI (cannot be done via
+code):
 
-Once that's set, the site will be live at:
-`https://<your-github-username>.github.io/EGTexLLC/`
+1. **Settings → Pages → Source** → select **GitHub Actions**.
+2. **Settings → Environments → github-pages → Deployment branches and tags**
+   → add `main` as an allowed branch (GitHub auto-creates this environment
+   with no branches allowed by default, which blocks every deploy until
+   `main` is added here).
 
-If you ever move to a custom domain or a `<username>.github.io` root repo,
-update `base` in `vite.config.js` (currently `/EGTexLLC/`) to match.
+The site is configured to serve from the custom domain **egtexllc.com** (see
+`public/CNAME` and `base: '/'` in `vite.config.js`) rather than
+`<username>.github.io/EGTexLLC/`. That requires matching DNS records at your
+domain registrar (Namecheap): four `A` records for host `@` pointing to
+`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`,
+plus entering `egtexllc.com` under **Settings → Pages → Custom domain** in
+GitHub. DNS changes can take up to ~24 hours to propagate, and GitHub may
+take a little while after that to provision the HTTPS certificate (check
+**Enforce HTTPS** once it's no longer greyed out).
+
+If you ever move off the custom domain back to the default
+`<username>.github.io/EGTexLLC/` URL, remove `public/CNAME` and change
+`base` in `vite.config.js` back to `/EGTexLLC/`.
 
 A manual fallback deploy is also available via `npm run deploy` (uses the
 `gh-pages` package to push `./dist` to a `gh-pages` branch), in case Actions
