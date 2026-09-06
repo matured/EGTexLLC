@@ -40,6 +40,16 @@
   border-color: var(--color-accent);
 }
 
+.field input[aria-invalid='true'],
+.field textarea[aria-invalid='true'] {
+  border-color: var(--color-accent);
+}
+
+.error {
+  font-size: var(--font-size-small);
+  color: var(--color-accent);
+}
+
 .status {
   min-height: 1.2em;
   font-size: var(--font-size-small);

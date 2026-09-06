@@ -10,7 +10,7 @@ export function Contact() {
       <div className="container">
         <SectionHeading
           eyebrow="Get In Touch"
-          title="Let's Get Your Freight Moving"
+          title="Let’s Get Your Freight Moving"
           description="Reach out by phone, WhatsApp, or the form below and our team will follow up quickly."
         />
 

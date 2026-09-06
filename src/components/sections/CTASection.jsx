@@ -12,7 +12,7 @@ export function CTASection() {
         <h2 className={styles.heading}>Ready to Move Your Freight?</h2>
         <p className={styles.sub}>
           Call our CEO directly or message our Operations Manager on WhatsApp —
-          we'll get your shipment scheduled fast.
+          we&rsquo;ll get your shipment scheduled fast.
         </p>
         <div className={styles.buttonRow}>
           <Button href={companyInfo.ceo.phoneHref} variant="primary">
