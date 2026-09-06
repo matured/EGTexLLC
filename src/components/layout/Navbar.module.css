@@ -56,8 +56,8 @@
 
 .desktopNav a:hover,
 .desktopNav a.active {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: var(--color-accent-on-dark);
+  color: var(--color-accent-on-dark);
 }
 
 .callButton {
@@ -75,8 +75,8 @@
 }
 
 .callButton:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: var(--color-accent-on-dark);
+  color: var(--color-accent-on-dark);
 }
 
 .hamburger {

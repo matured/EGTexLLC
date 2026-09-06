@@ -1,11 +1,13 @@
 :root {
-  /* Brand palette */
+  /* Brand palette — Texas flag theme (navy/white/red/silver), matching
+     the "Star & Route" logo. Variable names kept as-is (steel/orange)
+     to avoid touching every component file; only the hex values moved. */
   --color-navy-900: #0b1f3a;
   --color-navy-700: #13294b;
-  --color-steel-500: #4a6fa5;
-  --color-steel-300: #8fa8c9;
-  --color-orange-500: #f2792b;
-  --color-orange-600: #d9631c;
+  --color-steel-500: #9aa5b1;
+  --color-steel-300: #c7ccd1;
+  --color-orange-500: #bf0a30;
+  --color-orange-600: #9e0827;
   --color-white: #ffffff;
   --color-off-white: #f7f8fa;
   --color-slate-700: #3a4453;
@@ -21,6 +23,12 @@
   --color-text-inverse: var(--color-white);
   --color-accent: var(--color-orange-500);
   --color-accent-hover: var(--color-orange-600);
+  /* The Texas-flag red is too dark to hit 4.5:1 as small text on navy
+     backgrounds (~2.6:1) — this lighter red passes 4.5:1 on navy and
+     3:1 on white, so it also doubles as the global focus-ring color
+     (needs to work in both light and dark sections). The true red
+     stays for buttons and text on light backgrounds. */
+  --color-accent-on-dark: #f04a61;
   --color-border: #e3e7ee;
 
   /* Typography */
