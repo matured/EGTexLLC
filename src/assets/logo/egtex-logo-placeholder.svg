@@ -1,0 +1,38 @@
+<!--
+  Placeholder wordmark logo for EGTex LLC.
+  Replace this file with the company's real logo when available —
+  every component that renders the logo imports from this path.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" role="img" aria-labelledby="egtexLogoTitle">
+  <title id="egtexLogoTitle">EGTex LLC</title>
+  <g transform="translate(0,4)">
+    <rect width="64" height="64" rx="14" fill="#0B1F3A" />
+    <path
+      d="M10 40h2V26a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v14h2a2 2 0 0 1 2 2v3h-4a5 5 0 0 0-10 0H24a5 5 0 0 0-10 0h-4v-5a2 2 0 0 1 2-2z"
+      fill="#F7F8FA"
+    />
+    <path
+      d="M36 30h8.5a2 2 0 0 1 1.5.68l5.5 6.12a2 2 0 0 1 .5 1.32V42h-2a5 5 0 0 0-10 0h-4V30z"
+      fill="#F2792B"
+    />
+    <circle cx="19" cy="45" r="3.2" fill="#0B1F3A" stroke="#F7F8FA" stroke-width="1.4" />
+    <circle cx="45" cy="45" r="3.2" fill="#0B1F3A" stroke="#F7F8FA" stroke-width="1.4" />
+  </g>
+  <text
+    x="78"
+    y="38"
+    font-family="Archivo, 'Arial Black', sans-serif"
+    font-weight="800"
+    font-size="30"
+    fill="#FFFFFF"
+  >EGTex</text>
+  <text
+    x="79"
+    y="56"
+    font-family="Inter, sans-serif"
+    font-weight="600"
+    font-size="12"
+    letter-spacing="2.5"
+    fill="#8FA8C9"
+  >LOGISTICS LLC</text>
+</svg>

@@ -1,0 +1,9 @@
+.story {
+  max-width: 720px;
+  margin-bottom: var(--space-xl);
+}
+
+.paragraph {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lead);
+}

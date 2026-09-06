@@ -1,0 +1,56 @@
+:root {
+  /* Brand palette */
+  --color-navy-900: #0b1f3a;
+  --color-navy-700: #13294b;
+  --color-steel-500: #4a6fa5;
+  --color-steel-300: #8fa8c9;
+  --color-orange-500: #f2792b;
+  --color-orange-600: #d9631c;
+  --color-white: #ffffff;
+  --color-off-white: #f7f8fa;
+  --color-slate-700: #3a4453;
+  --color-slate-400: #8792a2;
+  --color-success-green: #2e9e5b;
+
+  /* Semantic tokens */
+  --color-bg: var(--color-white);
+  --color-bg-alt: var(--color-off-white);
+  --color-bg-dark: var(--color-navy-900);
+  --color-text: var(--color-slate-700);
+  --color-text-muted: var(--color-slate-400);
+  --color-text-inverse: var(--color-white);
+  --color-accent: var(--color-orange-500);
+  --color-accent-hover: var(--color-orange-600);
+  --color-border: #e3e7ee;
+
+  /* Typography */
+  --font-heading: 'Archivo', 'Arial Black', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --font-size-hero: clamp(2.25rem, 5.5vw, 3.75rem);
+  --font-size-h1: clamp(2rem, 4vw, 3rem);
+  --font-size-h2: clamp(1.5rem, 3vw, 2.25rem);
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-lead: 1.125rem;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --shadow-sm: 0 2px 8px rgba(11, 31, 58, 0.08);
+  --shadow-md: 0 8px 24px rgba(11, 31, 58, 0.12);
+  --shadow-lg: 0 16px 40px rgba(11, 31, 58, 0.18);
+
+  --nav-height: 76px;
+  --transition-base: 0.25s ease;
+}

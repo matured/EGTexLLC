@@ -1,0 +1,15 @@
+<!--
+  Reusable "route line" motif: a dashed highway/delivery-route path.
+  Consumed by RouteLine.jsx, which animates its stroke-dashoffset via GSAP.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" preserveAspectRatio="none" role="presentation" aria-hidden="true">
+  <path
+    id="route-path"
+    d="M -20 150 C 150 150, 200 40, 380 40 S 560 170, 740 170 S 900 30, 1080 30 S 1200 90, 1220 90"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-dasharray="14 14"
+  />
+</svg>

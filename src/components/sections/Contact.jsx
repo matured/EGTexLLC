@@ -1,0 +1,60 @@
+import { MapPin, MessageCircle, Phone, ShieldCheck } from 'lucide-react';
+import { SectionHeading } from '../ui/SectionHeading';
+import { ContactForm } from './ContactForm';
+import { companyInfo, fullAddress } from '../../data/companyInfo';
+import styles from './Contact.module.css';
+
+export function Contact() {
+  return (
+    <section id="contact" className="section" aria-label="Contact Us">
+      <div className="container">
+        <SectionHeading
+          eyebrow="Get In Touch"
+          title="Let's Get Your Freight Moving"
+          description="Reach out by phone, WhatsApp, or the form below and our team will follow up quickly."
+        />
+
+        <div className={styles.grid}>
+          <div className={styles.infoCard}>
+            <ul className={styles.infoList}>
+              <li>
+                <MapPin size={20} aria-hidden="true" />
+                <div>
+                  <strong>Address</strong>
+                  <span>{fullAddress}</span>
+                </div>
+              </li>
+              <li>
+                <Phone size={20} aria-hidden="true" />
+                <div>
+                  <strong>{companyInfo.ceo.title} — Call</strong>
+                  <a href={companyInfo.ceo.phoneHref}>{companyInfo.ceo.phone}</a>
+                </div>
+              </li>
+              <li>
+                <MessageCircle size={20} aria-hidden="true" />
+                <div>
+                  <strong>{companyInfo.operationsManager.title} — WhatsApp</strong>
+                  <a href={companyInfo.operationsManager.whatsappHref} target="_blank" rel="noreferrer">
+                    {companyInfo.operationsManager.whatsapp}
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <div className={styles.credentials}>
+              <ShieldCheck size={20} aria-hidden="true" />
+              <span>
+                DOT: {companyInfo.credentials.dot} &middot; MC: {companyInfo.credentials.mc}
+              </span>
+            </div>
+          </div>
+
+          <div className={styles.formCard}>
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

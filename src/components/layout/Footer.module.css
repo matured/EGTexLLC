@@ -1,0 +1,67 @@
+.footer {
+  background: var(--color-navy-900);
+  color: var(--color-steel-300);
+  padding-top: var(--space-2xl);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brandCol .logo {
+  height: 44px;
+  width: auto;
+  margin-bottom: var(--space-xs);
+}
+
+.tagline {
+  color: var(--color-steel-300);
+  font-size: var(--font-size-small);
+}
+
+.col h3 {
+  color: var(--color-white);
+  font-size: var(--font-size-body);
+  margin-bottom: var(--space-sm);
+}
+
+.col ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.col li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: var(--font-size-small);
+}
+
+.col a {
+  color: var(--color-steel-300);
+  text-decoration: none;
+}
+
+.col a:hover {
+  color: var(--color-accent);
+}
+
+.bottom {
+  padding: var(--space-md) var(--space-md);
+  text-align: center;
+  font-size: var(--font-size-small);
+}
+
+.bottom p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}

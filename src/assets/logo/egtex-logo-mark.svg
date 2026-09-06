@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="egtexMarkTitle">
+  <title id="egtexMarkTitle">EGTex LLC icon mark (placeholder)</title>
+  <rect width="64" height="64" rx="14" fill="#0B1F3A" />
+  <path
+    d="M10 40h2V26a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v14h2a2 2 0 0 1 2 2v3h-4a5 5 0 0 0-10 0H24a5 5 0 0 0-10 0h-4v-5a2 2 0 0 1 2-2z"
+    fill="#F7F8FA"
+  />
+  <path
+    d="M36 30h8.5a2 2 0 0 1 1.5.68l5.5 6.12a2 2 0 0 1 .5 1.32V42h-2a5 5 0 0 0-10 0h-4V30z"
+    fill="#F2792B"
+  />
+  <circle cx="19" cy="45" r="3.2" fill="#0B1F3A" stroke="#F7F8FA" stroke-width="1.4" />
+  <circle cx="45" cy="45" r="3.2" fill="#0B1F3A" stroke="#F7F8FA" stroke-width="1.4" />
+  <path
+    d="M4 20c6-4 12-4 18 0s12 4 18 0 12-4 18 0"
+    fill="none"
+    stroke="#F2792B"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    opacity="0.6"
+  />
+</svg>
