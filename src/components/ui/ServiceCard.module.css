@@ -1,0 +1,30 @@
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-off-white);
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.title {
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--space-xs);
+}
+
+.description {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}

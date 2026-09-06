@@ -1,0 +1,59 @@
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.infoCard,
+.formCard {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.infoList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.infoList li div {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+}
+
+.infoList a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.infoList a:hover {
+  color: var(--color-accent);
+}
+
+.credentials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-success-green);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}

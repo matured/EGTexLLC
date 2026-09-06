@@ -1,0 +1,115 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--nav-height);
+  background: transparent;
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.navbar.scrolled {
+  background: rgba(11, 31, 58, 0.96);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+}
+
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 42px;
+  width: auto;
+}
+
+.desktopNav {
+  display: none;
+}
+
+.desktopNav ul {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.desktopNav a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-size-small);
+  letter-spacing: 0.02em;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition-base), color var(--transition-base);
+}
+
+.desktopNav a:hover,
+.desktopNav a.active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.callButton {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-size-small);
+  padding: 0.5rem 1rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  transition: border-color var(--transition-base), color var(--transition-base);
+}
+
+.callButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 26px;
+  background: var(--color-white);
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: block;
+  }
+
+  .callButton {
+    display: inline-flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
