@@ -27,8 +27,8 @@
 
 .panel a:hover,
 .panel a.active {
-  background: rgba(242, 121, 43, 0.15);
-  color: var(--color-accent);
+  background: rgba(191, 10, 48, 0.18);
+  color: var(--color-accent-on-dark);
 }
 
 .callLink {

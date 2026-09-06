@@ -47,7 +47,7 @@
 }
 
 .col a:hover {
-  color: var(--color-accent);
+  color: var(--color-accent-on-dark);
 }
 
 .bottom {
