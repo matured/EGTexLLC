@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Button } from '../ui/Button';
 import { services } from '../../data/services';
 import styles from './ContactForm.module.css';
@@ -7,18 +7,46 @@ const FORMSPREE_FORM_ID = 'mnpqbwbk';
 const FORMSPREE_CONFIGURED = FORMSPREE_FORM_ID !== 'YOUR_FORM_ID';
 
 const initialState = { name: '', email: '', phone: '', service: '', message: '' };
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export function ContactForm() {
   const [values, setValues] = useState(initialState);
+  const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle'); // idle | submitting | success | error
+
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const messageRef = useRef(null);
+  const fieldRefs = { name: nameRef, email: emailRef, message: messageRef };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setValues((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => (prev[name] ? { ...prev, [name]: undefined } : prev));
+  };
+
+  const validate = () => {
+    const nextErrors = {};
+    if (!values.name.trim()) nextErrors.name = 'Please enter your name.';
+    if (!values.email.trim()) {
+      nextErrors.email = 'Please enter your email.';
+    } else if (!EMAIL_PATTERN.test(values.email.trim())) {
+      nextErrors.email = 'Please enter a valid email address.';
+    }
+    if (!values.message.trim()) nextErrors.message = 'Please enter a message.';
+    return nextErrors;
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    const nextErrors = validate();
+    if (Object.keys(nextErrors).length > 0) {
+      setErrors(nextErrors);
+      const firstInvalidField = ['name', 'email', 'message'].find((field) => nextErrors[field]);
+      fieldRefs[firstInvalidField]?.current?.focus();
+      return;
+    }
 
     if (!FORMSPREE_CONFIGURED) {
       setStatus('unconfigured');
@@ -36,6 +64,7 @@ export function ContactForm() {
       if (response.ok) {
         setStatus('success');
         setValues(initialState);
+        setErrors({});
       } else {
         setStatus('error');
       }
@@ -49,32 +78,58 @@ export function ContactForm() {
       <div className={styles.field}>
         <label htmlFor="name">Full Name</label>
         <input
+          ref={nameRef}
           id="name"
           name="name"
           type="text"
+          autoComplete="name"
           required
           aria-required="true"
+          aria-invalid={errors.name ? 'true' : undefined}
+          aria-describedby={errors.name ? 'name-error' : undefined}
           value={values.name}
           onChange={handleChange}
         />
+        {errors.name && (
+          <span id="name-error" className={styles.error}>
+            {errors.name}
+          </span>
+        )}
       </div>
 
       <div className={styles.row}>
         <div className={styles.field}>
           <label htmlFor="email">Email</label>
           <input
+            ref={emailRef}
             id="email"
             name="email"
             type="email"
+            autoComplete="email"
+            spellCheck={false}
             required
             aria-required="true"
+            aria-invalid={errors.email ? 'true' : undefined}
+            aria-describedby={errors.email ? 'email-error' : undefined}
             value={values.email}
             onChange={handleChange}
           />
+          {errors.email && (
+            <span id="email-error" className={styles.error}>
+              {errors.email}
+            </span>
+          )}
         </div>
         <div className={styles.field}>
           <label htmlFor="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" value={values.phone} onChange={handleChange} />
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            value={values.phone}
+            onChange={handleChange}
+          />
         </div>
       </div>
 
@@ -93,14 +148,22 @@ export function ContactForm() {
       <div className={styles.field}>
         <label htmlFor="message">Message</label>
         <textarea
+          ref={messageRef}
           id="message"
           name="message"
           rows={4}
           required
           aria-required="true"
+          aria-invalid={errors.message ? 'true' : undefined}
+          aria-describedby={errors.message ? 'message-error' : undefined}
           value={values.message}
           onChange={handleChange}
         />
+        {errors.message && (
+          <span id="message-error" className={styles.error}>
+            {errors.message}
+          </span>
+        )}
       </div>
 
       <Button as="button" type="submit" variant="primary" disabled={status === 'submitting'}>

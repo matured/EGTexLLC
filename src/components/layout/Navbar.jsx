@@ -35,7 +35,13 @@ export function Navbar() {
     >
       <div className={`container ${styles.inner}`}>
         <a href="#home" className={styles.brand} aria-label={`${companyInfo.name} home`}>
-          <img src={logo} alt={`${companyInfo.name} logo`} className={styles.logo} />
+          <img
+            src={logo}
+            alt={`${companyInfo.name} logo`}
+            className={styles.logo}
+            width={166}
+            height={42}
+          />
         </a>
 
         <nav className={styles.desktopNav} aria-label="Primary">

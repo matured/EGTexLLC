@@ -10,7 +10,13 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.brandCol}>
-          <img src={logo} alt={`${companyInfo.name} logo`} className={styles.logo} />
+          <img
+            src={logo}
+            alt={`${companyInfo.name} logo`}
+            className={styles.logo}
+            width={174}
+            height={44}
+          />
           <p className={styles.tagline}>{companyInfo.tagline}</p>
         </div>
 
