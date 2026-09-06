@@ -4,7 +4,7 @@ import styles from './About.module.css';
 
 export function About() {
   return (
-    <section id="about" className={`section ${styles.about}`} aria-label="About EGTex LLC">
+    <section id="about" className={`section ${styles.about}`} aria-label="About EGTex Broker LLC">
       <div className="container">
         <AboutStory />
         <AboutValues />

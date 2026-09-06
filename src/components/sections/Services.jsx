@@ -13,7 +13,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Our Services"
           title="Freight Capabilities for Every Load"
-          description="Placeholder service categories — let us know your exact lanes and equipment so we can tailor this list to what EGTex LLC actually runs."
+          description="Placeholder service categories — let us know your exact lanes and freight types so we can tailor this list to what EGTex Broker LLC actually offers."
           align="center"
         />
         <div ref={containerRef} className={styles.grid}>

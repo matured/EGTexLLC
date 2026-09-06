@@ -39,15 +39,15 @@ export function Hero() {
 
       <div className={`container ${styles.content}`}>
         <span ref={eyebrowRef} className="eyebrow">
-          Family-Owned &bull; DOT &amp; MC Licensed
+          Family-Owned &bull; Licensed Freight Broker
         </span>
         <h1 ref={headingRef} className={styles.heading}>
-          Reliable Freight, Delivered With Family Values
+          Reliable Freight Solutions, Delivered With Family Values
         </h1>
         <p ref={subRef} className={styles.sub}>
-          EGTex LLC moves freight across Texas and beyond with dependable
-          drivers, modern equipment, and the kind of service you'd expect
-          from a company that treats every load like it's their own.
+          EGTex Broker LLC connects your freight with a trusted network of
+          carriers across Texas and beyond — the personal service of a
+          family business, with the reach to get any load covered.
         </p>
         <div ref={ctaRef} className={styles.ctaRow}>
           <Button href="#contact" variant="primary">

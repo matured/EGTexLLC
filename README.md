@@ -1,7 +1,7 @@
-# EGTex LLC — Trucking & Logistics Website
+# EGTex Broker LLC — Freight Brokerage Website
 
-A modern, animated marketing site for EGTex LLC, a family-owned trucking and
-logistics company based in Waller, Texas. Built with React + Vite, GSAP
+A modern, animated marketing site for EGTex Broker LLC, a family-owned
+freight brokerage based in Waller, Texas. Built with React + Vite, GSAP
 ScrollTrigger, and Framer Motion.
 
 ## Getting started
@@ -46,36 +46,35 @@ is ever unavailable.
 ## Things to finish before launch
 
 This site ships fully functional but with a few clearly-marked placeholders
-that only the EGTex LLC team can fill in:
+that only the EGTex Broker LLC team can fill in:
 
-1. **Real logo** — `src/assets/logo/egtex-logo-placeholder.svg` and
-   `egtex-logo-mark.svg` are placeholder wordmarks. Replace those files (keep
-   the same filenames) once you have your real logo, and it will update
-   everywhere (navbar, footer, favicon source).
-2. **About page stats** — `src/data/stats.js` has placeholder numbers (years
+1. **About page stats** — `src/data/stats.js` has placeholder numbers (years
    in business, states served, on-time %, loads delivered). Update with real
    figures.
-3. **Company story** — `src/components/sections/AboutStory.jsx` has a
+2. **Company story** — `src/components/sections/AboutStory.jsx` has a
    generic placeholder narrative. Replace with your actual founding story.
-4. **Services list** — `src/data/services.js` lists plausible trucking
-   service categories (dry van, flatbed, expedited, etc.). Confirm these
-   match what EGTex LLC actually offers and edit as needed.
-5. **Contact form** — the form in `src/components/sections/ContactForm.jsx`
-   is wired to [Formspree](https://formspree.io) but needs your real form ID.
-   Create a free Formspree account, create a new form, and replace
-   `FORMSPREE_FORM_ID = 'YOUR_FORM_ID'` at the top of that file with your
-   actual form ID. Until then, the form shows a friendly message asking
-   visitors to call or WhatsApp instead — it won't silently fail.
-6. **Photos** — the hero and other sections currently use CSS gradients and
-   an animated route-line motif rather than real truck/team photos. Adding
-   real photography (in `src/assets/images/`) will make the site feel even
-   more personal — ask and I can wire them in wherever you'd like.
+3. **Services list** — `src/data/services.js` lists plausible freight
+   brokerage categories (dry van, flatbed, expedited, etc.), written around
+   arranging freight through a carrier network rather than owning trucks.
+   Confirm these match what EGTex Broker LLC actually offers and edit as
+   needed.
+4. **Photos** — the hero and other sections currently use CSS gradients and
+   an animated route-line motif rather than real photos. Adding real
+   photography (in `src/assets/images/`) will make the site feel even more
+   personal — ask and I can wire them in wherever you'd like.
+
+Already done: the real logo (Star & Route design, `src/assets/logo/`) and
+the Formspree contact form (real form ID wired into
+`src/components/sections/ContactForm.jsx`) are both live.
 
 ## Design notes
 
 - **Colors/fonts:** defined as CSS custom properties in
-  `src/styles/variables.css` — navy/steel-blue + orange palette, Archivo
-  (headings) + Inter (body).
+  `src/styles/variables.css` — a navy/red/silver Texas-flag palette
+  (matching the logo) plus Archivo (headings) and Inter (body). A
+  lighter `--color-accent-on-dark` red is used specifically for text on
+  navy backgrounds, since the true flag red doesn't hit 4.5:1 contrast
+  there.
 - **Animation:** GSAP ScrollTrigger drives the big scroll-scrubbed pieces
   (hero parallax, the self-drawing route-line motif); Framer Motion handles
   component-level polish (mobile menu, hover states, staggered card
@@ -86,3 +85,8 @@ that only the EGTex LLC team can fill in:
   them stays in sync. The company's EIN is intentionally **not** published
   anywhere on the site (unlike DOT/MC numbers, an EIN isn't meant to be
   public and offers no benefit to site visitors).
+- **Business model:** EGTex Broker LLC is a freight brokerage — it
+  connects shippers with a carrier network rather than operating its own
+  fleet. Copy across the site (About, Services, Value Props) is written
+  accordingly ("arrange," "carrier network," "Licensed & Bonded") rather
+  than using owned-fleet language ("our drivers," "our trucks").

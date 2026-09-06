@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <section className="section" aria-label="Why Choose EGTex LLC">
+        <section className="section" aria-label="Why Choose EGTex Broker LLC">
           <ValueProps />
         </section>
         <section className="section section--alt" aria-label="Services Overview">

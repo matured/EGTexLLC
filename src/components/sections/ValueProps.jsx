@@ -10,8 +10,8 @@ const VALUES = [
   },
   {
     icon: ShieldCheck,
-    title: 'Licensed & Insured',
-    description: 'Fully compliant and covered, verified with DOT and MC numbers.',
+    title: 'Licensed & Bonded',
+    description: 'Fully compliant broker authority, verified with DOT and MC numbers.',
   },
   {
     icon: Users,

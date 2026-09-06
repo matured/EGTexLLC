@@ -5,7 +5,7 @@ import { stats } from '../../data/stats';
 import styles from './AboutValues.module.css';
 
 const VALUES = [
-  { icon: ShieldCheck, title: 'Safety', description: 'Every driver, every load, every mile.' },
+  { icon: ShieldCheck, title: 'Safety', description: 'Every carrier vetted, every load protected.' },
   { icon: Handshake, title: 'Reliability', description: "We show up and deliver when we say we will." },
   { icon: Sparkles, title: 'Integrity', description: 'Honest pricing, honest communication.' },
   { icon: HeartHandshake, title: 'Customer-First', description: 'Your freight matters to us like it is our own.' },

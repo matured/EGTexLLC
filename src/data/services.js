@@ -1,5 +1,7 @@
-// Placeholder service categories — confirm/edit against what EGTex LLC
-// actually offers before launch. Icon names map to lucide-react components.
+// Placeholder service categories — confirm/edit against what EGTex Broker
+// LLC actually offers before launch. Icon names map to lucide-react
+// components. As a freight brokerage, these describe freight we arrange
+// through our carrier network, not equipment we own and operate ourselves.
 
 export const services = [
   {
@@ -7,18 +9,18 @@ export const services = [
     icon: 'Truck',
     title: 'Dry Van Freight',
     description:
-      'General palletized and boxed freight hauled in fully enclosed trailers, protected from the elements.',
+      'General palletized and boxed freight matched with fully enclosed trailers, protected from the elements.',
     detail:
-      'Our dry van fleet handles everyday freight of all kinds — from retail goods to packaged materials — with secure, weatherproof trailers suited for most commodities.',
+      'We match your dry van freight with vetted carriers running secure, weatherproof trailers — suited for everyday freight of all kinds, from retail goods to packaged materials.',
   },
   {
     id: 'flatbed',
     icon: 'Boxes',
     title: 'Flatbed Transport',
     description:
-      'Open-deck hauling for oversized loads, construction materials, and heavy machinery.',
+      'Open-deck capacity arranged for oversized loads, construction materials, and heavy machinery.',
     detail:
-      'When cargo is too large, heavy, or oddly shaped for an enclosed trailer, our flatbed service and experienced crews get it strapped, secured, and delivered safely.',
+      'When cargo is too large, heavy, or oddly shaped for an enclosed trailer, we connect you with experienced flatbed carriers who get it strapped, secured, and delivered safely.',
   },
   {
     id: 'expedited',
@@ -27,7 +29,7 @@ export const services = [
     description:
       'Time-critical, same-day and next-day shipments when deadlines cannot slip.',
     detail:
-      'Dedicated trucks and priority routing for urgent loads — built for shippers who need speed and certainty over standard transit times.',
+      'We prioritize routing and tap our carrier network for urgent loads — built for shippers who need speed and certainty over standard transit times.',
   },
   {
     id: 'regional-longhaul',
@@ -36,16 +38,16 @@ export const services = [
     description:
       'Reliable regional coverage across Texas and the Gulf region, plus long-haul lanes nationwide.',
     detail:
-      'Whether it is a short regional run or a cross-country haul, our drivers plan efficient routes to keep your freight moving on schedule.',
+      'Whether it is a short regional run or a cross-country haul, we coordinate with our carrier network to keep your freight moving on schedule.',
   },
   {
     id: 'full-truckload',
     icon: 'PackageCheck',
     title: 'Full Truckload (FTL)',
     description:
-      'Dedicated, single-shipper truckloads for maximum security and faster transit.',
+      'Dedicated, single-shipper truckloads arranged for maximum security and faster transit.',
     detail:
-      'Your freight, your trailer, no shared space. FTL service minimizes handling and keeps transit times predictable.',
+      'Your freight, a dedicated trailer, no shared space. We arrange FTL service that minimizes handling and keeps transit times predictable.',
   },
   {
     id: 'logistics-coordination',
@@ -54,6 +56,6 @@ export const services = [
     description:
       'End-to-end coordination and tracking so you always know where your freight stands.',
     detail:
-      'From pickup scheduling to delivery confirmation, our operations team keeps every shipment coordinated and communicated clearly.',
+      'From carrier selection to delivery confirmation, our operations team keeps every shipment coordinated and communicated clearly.',
   },
 ];
