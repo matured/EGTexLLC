@@ -48,24 +48,22 @@ is ever unavailable.
 This site ships fully functional but with a few clearly-marked placeholders
 that only the EGTex Broker LLC team can fill in:
 
-1. **About page stats** — `src/data/stats.js` has placeholder numbers (years
-   in business, states served, on-time %, loads delivered). Update with real
-   figures.
-2. **Company story** — `src/components/sections/AboutStory.jsx` has a
+1. **Company story** — `src/components/sections/AboutStory.jsx` has a
    generic placeholder narrative. Replace with your actual founding story.
-3. **Services list** — `src/data/services.js` lists plausible freight
+2. **Services list** — `src/data/services.js` lists plausible freight
    brokerage categories (dry van, flatbed, expedited, etc.), written around
    arranging freight through a carrier network rather than owning trucks.
    Confirm these match what EGTex Broker LLC actually offers and edit as
    needed.
-4. **Photos** — the hero and other sections currently use CSS gradients and
+3. **Photos** — the hero and other sections currently use CSS gradients and
    an animated route-line motif rather than real photos. Adding real
    photography (in `src/assets/images/`) will make the site feel even more
    personal — ask and I can wire them in wherever you'd like.
 
-Already done: the real logo (Star & Route design, `src/assets/logo/`) and
-the Formspree contact form (real form ID wired into
-`src/components/sections/ContactForm.jsx`) are both live.
+Already done: the real logo (Star & Route design, `src/assets/logo/`), the
+Formspree contact form (real form ID wired into
+`src/components/sections/ContactForm.jsx`), and the About page stats
+(`src/data/stats.js`, confirmed accurate) are all live.
 
 ## Design notes
 

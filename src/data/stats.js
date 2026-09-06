@@ -1,4 +1,4 @@
-// Placeholder stats for the About page counters — replace with real figures.
+// About page stat counters — confirmed accurate by the EGTex Broker LLC team.
 
 export const stats = [
   { id: 'years', value: 5, suffix: '+', label: 'Years in Business' },
