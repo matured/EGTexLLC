@@ -16,12 +16,12 @@ const VALUES = [
   {
     icon: Users,
     title: 'Family-Owned',
-    description: 'A hands-on team that treats every customer like a neighbor.',
+    description: 'Personalized dispatch support, 24/7, in English and Spanish.',
   },
   {
     icon: MapPin,
-    title: 'Regional & Long-Haul',
-    description: 'Coverage across Texas and the Gulf region, with national reach.',
+    title: 'Nationwide Coverage',
+    description: 'Delivering freight to all 49 states, with the capacity to handle high volumes.',
   },
 ];
 

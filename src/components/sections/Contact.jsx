@@ -11,7 +11,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Get In Touch"
           title="Let’s Get Your Freight Moving"
-          description="Reach out by phone, email, WhatsApp, or the form below and our team will follow up quickly."
+          description="Reach out by phone, email, WhatsApp, or the form below — our team responds in English and Español, 24/7."
         />
 
         <div className={styles.grid}>
