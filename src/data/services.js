@@ -9,36 +9,33 @@ export const services = [
     icon: 'Stack',
     title: 'Flatbed Transport',
     description:
-      'Open-deck capacity arranged for freight that will not fit inside an enclosed trailer.',
+      "Open-deck trailers for freight that won't fit inside an enclosed one.",
     detail:
-      'From steel and machinery to palletized loads, we connect you with experienced flatbed carriers who get it strapped, secured, and delivered safely.',
+      "Steel, machinery, palletized loads — if it fits on a flatbed, we've got carriers who know how to secure it and get it there safely.",
   },
   {
     id: 'step-deck',
     icon: 'Stairs',
     title: 'Step Deck',
-    description:
-      'Drop-deck trailers for taller freight that exceeds standard flatbed height limits.',
+    description: 'For freight too tall for a standard flatbed.',
     detail:
-      'When cargo is too tall for a standard flatbed, we arrange step-deck (drop-deck) carriers with the lower deck height needed to stay within legal clearance.',
+      "When cargo's too tall for a standard flatbed, we bring in step-deck (drop-deck) carriers — their lower deck height keeps you within legal clearance.",
   },
   {
     id: 'oversized-overweight',
     icon: 'ArrowsOutSimple',
     title: 'Oversized / Overweight',
-    description:
-      'Permitted, escorted moves for loads that exceed standard legal dimensions or weight.',
+    description: 'Permitted, escorted moves for loads too big or heavy for standard limits.',
     detail:
-      'We handle the permitting, routing, and escort coordination that oversized and overweight (OS/OD) loads require, matched with carriers experienced in specialized hauls.',
+      "Oversized and overweight (OS/OD) loads mean permits, routing, and sometimes escorts — we handle all of it, and match you with carriers who've done this kind of haul before.",
   },
   {
     id: 'tarp-loads',
     icon: 'Umbrella',
     title: 'Tarp Loads',
-    description:
-      'Tarped flatbed freight, protecting exposed cargo from weather and road debris in transit.',
+    description: 'Tarped flatbed freight, keeping exposed cargo safe from weather and road debris.',
     detail:
-      'For freight that needs to stay dry and protected on an open deck, we arrange carriers equipped and experienced with proper tarping for the load type.',
+      'Need your freight covered on an open deck? We arrange carriers who know how to tarp it right for the load.',
   },
   {
     id: 'building-materials',
@@ -47,6 +44,6 @@ export const services = [
     description:
       'Lumber, steel, roofing, and other construction supplies moved on schedule for job sites.',
     detail:
-      'We keep construction projects on schedule by coordinating reliable flatbed capacity for lumber, steel, roofing, and other building materials, job site delivery included.',
+      "We keep job sites stocked and on schedule — lumber, steel, roofing, whatever you need moved, we've got flatbed carriers ready to haul it.",
   },
 ];

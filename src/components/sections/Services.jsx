@@ -13,7 +13,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Our Services"
           title="Freight Capabilities for Every Load"
-          description="As a flatbed specialist, we arrange the equipment and permits your load actually needs — from standard open-deck freight to oversized, permitted hauls."
+          description="We specialize in flatbed. Whatever your load needs — standard open-deck or oversized and permitted — we'll line up the right equipment."
           align="center"
         />
         <div ref={containerRef} className={styles.grid}>

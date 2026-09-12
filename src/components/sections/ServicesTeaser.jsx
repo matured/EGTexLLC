@@ -14,7 +14,7 @@ export function ServicesTeaser() {
       <SectionHeading
         eyebrow="What We Do"
         title="Freight Solutions Built Around You"
-        description="From standard flatbed loads to oversized, permitted freight, our carrier network has the equipment and experience to move it."
+        description="Standard flatbed or oversized and permitted — our carriers have hauled it before."
       />
       <div ref={containerRef} className={styles.grid}>
         {preview.map((service) => (

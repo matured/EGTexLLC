@@ -7,8 +7,8 @@ import styles from './AboutValues.module.css';
 const VALUES = [
   { icon: ShieldCheck, title: 'Safety', description: 'Every carrier vetted, every load protected.' },
   { icon: Handshake, title: 'Reliability', description: "We show up and deliver when we say we will." },
-  { icon: Sparkle, title: 'Integrity', description: 'Honest pricing, honest communication.' },
-  { icon: HandHeart, title: 'Customer-First', description: 'Your freight matters to us like it is our own.' },
+  { icon: Sparkle, title: 'Integrity', description: "Straight pricing, no surprises." },
+  { icon: HandHeart, title: 'Customer-First', description: 'We treat small shippers like big accounts.' },
 ];
 
 export function AboutValues() {

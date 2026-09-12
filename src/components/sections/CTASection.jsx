@@ -11,8 +11,8 @@ export function CTASection() {
       <div className={`container ${styles.content}`}>
         <h2 className={styles.heading}>Ready to Move Your Freight?</h2>
         <p className={styles.sub}>
-          Call our CEO directly or message our Operations Manager on WhatsApp —
-          we&rsquo;ll get your shipment scheduled fast.
+          Call our CEO directly, or message our Operations Manager on
+          WhatsApp. We&rsquo;ll get your shipment scheduled fast.
         </p>
         <div className={styles.buttonRow}>
           <Button href={companyInfo.ceo.phoneHref} variant="primary">
