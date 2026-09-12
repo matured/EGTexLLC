@@ -36,6 +36,40 @@
 
 @media (min-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      'a a a a b b b b b b b b'
+      'a a a a c c c c d d d d';
+  }
+
+  .grid > :nth-child(1) {
+    grid-area: a;
+  }
+  .grid > :nth-child(2) {
+    grid-area: b;
+  }
+  .grid > :nth-child(3) {
+    grid-area: c;
+  }
+  .grid > :nth-child(4) {
+    grid-area: d;
+  }
+
+  .grid > :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-navy-900);
+    border-color: var(--color-navy-900);
+  }
+  .grid > :nth-child(1) .icon {
+    color: var(--color-accent-on-dark);
+  }
+  .grid > :nth-child(1) .title {
+    color: var(--color-white);
+    font-size: 1.35rem;
+  }
+  .grid > :nth-child(1) .description {
+    color: rgba(255, 255, 255, 0.75);
   }
 }

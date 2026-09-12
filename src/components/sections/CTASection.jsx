@@ -1,4 +1,4 @@
-import { MessageCircle, Phone } from 'lucide-react';
+import { ChatCircle, Phone } from '@phosphor-icons/react';
 import { Button } from '../ui/Button';
 import { RouteLine } from '../ui/RouteLine';
 import { companyInfo } from '../../data/companyInfo';
@@ -16,7 +16,7 @@ export function CTASection() {
         </p>
         <div className={styles.buttonRow}>
           <Button href={companyInfo.ceo.phoneHref} variant="primary">
-            <Phone size={18} aria-hidden="true" />
+            <Phone size={18} weight="light" aria-hidden="true" />
             Call {companyInfo.ceo.phone}
           </Button>
           <Button
@@ -25,7 +25,7 @@ export function CTASection() {
             rel="noreferrer"
             variant="secondary"
           >
-            <MessageCircle size={18} aria-hidden="true" />
+            <ChatCircle size={18} weight="light" aria-hidden="true" />
             WhatsApp Us
           </Button>
         </div>

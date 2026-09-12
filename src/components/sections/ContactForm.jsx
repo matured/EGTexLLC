@@ -174,7 +174,7 @@ export function ContactForm() {
 
       <div aria-live="polite" className={styles.status}>
         {status === 'success' &&
-          'You’re all set! We’ve got your message and a real person will reach out shortly — thanks for reaching out to EGTex Broker LLC.'}
+          'You’re all set. We’ve got your message, and a real person will reach out shortly.'}
         {status === 'error' && 'Something went wrong sending your message. Please call or WhatsApp us instead.'}
         {status === 'unconfigured' &&
           'This form is not yet connected to an inbox. Please call or WhatsApp us directly for now.'}

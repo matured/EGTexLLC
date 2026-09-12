@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone } from 'lucide-react';
+import { Phone } from '@phosphor-icons/react';
 import logo from '../../assets/logo/egtex-logo-placeholder.svg';
 import { companyInfo } from '../../data/companyInfo';
 import { useActiveSection } from '../../hooks/useActiveSection';
@@ -64,7 +64,7 @@ export function Navbar() {
           href={companyInfo.ceo.phoneHref}
           className={styles.callButton}
         >
-          <Phone size={18} aria-hidden="true" />
+          <Phone size={18} weight="light" aria-hidden="true" />
           <span>{companyInfo.ceo.phone}</span>
         </a>
 
