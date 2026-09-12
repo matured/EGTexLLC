@@ -11,17 +11,17 @@ const VALUES = [
   {
     icon: ShieldCheck,
     title: 'Licensed & Bonded',
-    description: 'Fully compliant broker authority, verified with DOT and MC numbers.',
+    description: 'Verified DOT and MC numbers — look us up.',
   },
   {
     icon: Users,
     title: 'Family-Owned',
-    description: 'Personalized dispatch support, 24/7, in English and Spanish.',
+    description: 'Call anytime, day or night — we answer in English or Spanish.',
   },
   {
     icon: MapPin,
     title: 'Nationwide Coverage',
-    description: 'Delivering freight to all 49 states, with the capacity to handle high volumes.',
+    description: 'We run loads to all 49 states, big or small.',
   },
 ];
 

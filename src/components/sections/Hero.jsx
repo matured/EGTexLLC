@@ -42,12 +42,12 @@ export function Hero() {
           Family-Owned &bull; Licensed Freight Broker
         </span>
         <h1 ref={headingRef} className={styles.heading}>
-          Reliable Freight Solutions, Delivered With Family Values
+          Flatbed Freight, Handled by People Who Answer the Phone
         </h1>
         <p ref={subRef} className={styles.sub}>
-          EGTex Broker LLC connects your freight with a trusted network of
-          carriers across Texas and beyond — the personal service of a
-          family business, with the reach to get any load covered.
+          We're a flatbed-focused freight brokerage in Waller, Texas. Call
+          and you'll get a real person — not a call center — who'll line
+          up the right carrier for your load, anywhere in the country.
         </p>
         <div ref={ctaRef} className={styles.ctaRow}>
           <Button href="#contact" variant="primary">
