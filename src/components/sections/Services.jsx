@@ -13,7 +13,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Our Services"
           title="Freight Capabilities for Every Load"
-          description="Placeholder service categories — let us know your exact lanes and freight types so we can tailor this list to what EGTex Broker LLC actually offers."
+          description="As a flatbed specialist, we arrange the equipment and permits your load actually needs — from standard open-deck freight to oversized, permitted hauls."
           align="center"
         />
         <div ref={containerRef} className={styles.grid}>

@@ -14,7 +14,7 @@ export function ServicesTeaser() {
       <SectionHeading
         eyebrow="What We Do"
         title="Freight Solutions Built Around You"
-        description="From everyday dry van loads to time-critical expedited freight, our carrier network is ready to move it."
+        description="From standard flatbed loads to oversized, permitted freight, our carrier network has the equipment and experience to move it."
       />
       <div ref={containerRef} className={styles.grid}>
         {preview.map((service) => (

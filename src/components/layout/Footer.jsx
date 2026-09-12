@@ -1,4 +1,4 @@
-import { MapPin, ChatCircle, Phone } from '@phosphor-icons/react';
+import { MapPin, ChatCircle, EnvelopeSimple, Phone } from '@phosphor-icons/react';
 import logo from '../../assets/logo/egtex-logo-placeholder.svg';
 import { companyInfo, fullAddress } from '../../data/companyInfo';
 import styles from './Footer.module.css';
@@ -35,6 +35,12 @@ export function Footer() {
               <ChatCircle size={16} weight="light" aria-hidden="true" />
               <a href={companyInfo.operationsManager.whatsappHref} target="_blank" rel="noreferrer">
                 {companyInfo.operationsManager.whatsapp} ({companyInfo.operationsManager.title}, WhatsApp)
+              </a>
+            </li>
+            <li>
+              <EnvelopeSimple size={16} weight="light" aria-hidden="true" />
+              <a href={companyInfo.owner.emailHref}>
+                {companyInfo.owner.email} ({companyInfo.owner.name}, {companyInfo.owner.title})
               </a>
             </li>
           </ul>

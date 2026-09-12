@@ -15,28 +15,24 @@
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .grid > :nth-child(-n + 3) {
-    grid-column: span 4;
+  .grid > :nth-child(-n + 4) {
+    grid-column: span 3;
   }
-  .grid > :nth-child(4),
   .grid > :nth-child(5) {
-    grid-column: span 6;
-  }
-  .grid > :nth-child(6) {
     grid-column: span 12;
     text-align: center;
     background: var(--color-navy-900);
     border-color: var(--color-navy-900);
   }
-  .grid > :nth-child(6) > div:first-child {
+  .grid > :nth-child(5) > div:first-child {
     margin-inline: auto;
     background: rgba(255, 255, 255, 0.12);
     color: var(--color-accent-on-dark);
   }
-  .grid > :nth-child(6) h3 {
+  .grid > :nth-child(5) h3 {
     color: var(--color-white);
   }
-  .grid > :nth-child(6) p {
+  .grid > :nth-child(5) p {
     color: rgba(255, 255, 255, 0.75);
   }
 }

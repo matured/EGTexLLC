@@ -24,6 +24,12 @@ export const companyInfo = {
     whatsapp: '(832) 260-6453',
     whatsappHref: 'https://wa.me/18322606453',
   },
+  owner: {
+    name: 'Esther',
+    title: 'Owner',
+    email: 'esther@egtexllc.com',
+    emailHref: 'mailto:esther@egtexllc.com',
+  },
   credentials: {
     dot: '3452825',
     mc: '1124616',

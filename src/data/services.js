@@ -1,61 +1,52 @@
-// Placeholder service categories — confirm/edit against what EGTex Broker
-// LLC actually offers before launch. Icon names map to @phosphor-icons/react
-// components. As a freight brokerage, these describe freight we arrange
-// through our carrier network, not equipment we own and operate ourselves.
+// Confirmed service categories for EGTex Broker LLC — a flatbed-specialist
+// freight brokerage. Icon names map to @phosphor-icons/react components. As
+// a brokerage, these describe freight we arrange through our carrier
+// network, not equipment we own and operate ourselves.
 
 export const services = [
-  {
-    id: 'dry-van',
-    icon: 'Truck',
-    title: 'Dry Van Freight',
-    description:
-      'General palletized and boxed freight matched with fully enclosed trailers, protected from the elements.',
-    detail:
-      'We match your dry van freight with vetted carriers running secure, weatherproof trailers — suited for everyday freight of all kinds, from retail goods to packaged materials.',
-  },
   {
     id: 'flatbed',
     icon: 'Stack',
     title: 'Flatbed Transport',
     description:
-      'Open-deck capacity arranged for oversized loads, construction materials, and heavy machinery.',
+      'Open-deck capacity arranged for freight that will not fit inside an enclosed trailer.',
     detail:
-      'When cargo is too large, heavy, or oddly shaped for an enclosed trailer, we connect you with experienced flatbed carriers who get it strapped, secured, and delivered safely.',
+      'From steel and machinery to palletized loads, we connect you with experienced flatbed carriers who get it strapped, secured, and delivered safely.',
   },
   {
-    id: 'expedited',
-    icon: 'Clock',
-    title: 'Expedited Freight',
+    id: 'step-deck',
+    icon: 'Stairs',
+    title: 'Step Deck',
     description:
-      'Time-critical, same-day and next-day shipments when deadlines cannot slip.',
+      'Drop-deck trailers for taller freight that exceeds standard flatbed height limits.',
     detail:
-      'We prioritize routing and tap our carrier network for urgent loads — built for shippers who need speed and certainty over standard transit times.',
+      'When cargo is too tall for a standard flatbed, we arrange step-deck (drop-deck) carriers with the lower deck height needed to stay within legal clearance.',
   },
   {
-    id: 'regional-longhaul',
-    icon: 'MapPin',
-    title: 'Regional & Long-Haul',
+    id: 'oversized-overweight',
+    icon: 'ArrowsOutSimple',
+    title: 'Oversized / Overweight',
     description:
-      'Reliable regional coverage across Texas and the Gulf region, plus long-haul lanes nationwide.',
+      'Permitted, escorted moves for loads that exceed standard legal dimensions or weight.',
     detail:
-      'Whether it is a short regional run or a cross-country haul, we coordinate with our carrier network to keep your freight moving on schedule.',
+      'We handle the permitting, routing, and escort coordination that oversized and overweight (OS/OD) loads require, matched with carriers experienced in specialized hauls.',
   },
   {
-    id: 'full-truckload',
-    icon: 'Package',
-    title: 'Full Truckload (FTL)',
+    id: 'tarp-loads',
+    icon: 'Umbrella',
+    title: 'Tarp Loads',
     description:
-      'Dedicated, single-shipper truckloads arranged for maximum security and faster transit.',
+      'Tarped flatbed freight, protecting exposed cargo from weather and road debris in transit.',
     detail:
-      'Your freight, a dedicated trailer, no shared space. We arrange FTL service that minimizes handling and keeps transit times predictable.',
+      'For freight that needs to stay dry and protected on an open deck, we arrange carriers equipped and experienced with proper tarping for the load type.',
   },
   {
-    id: 'logistics-coordination',
-    icon: 'ShieldCheck',
-    title: 'Logistics Coordination',
+    id: 'building-materials',
+    icon: 'Buildings',
+    title: 'Building Materials',
     description:
-      'End-to-end coordination and tracking so you always know where your freight stands.',
+      'Lumber, steel, roofing, and other construction supplies moved on schedule for job sites.',
     detail:
-      'From carrier selection to delivery confirmation, our operations team keeps every shipment coordinated and communicated clearly.',
+      'We keep construction projects on schedule by coordinating reliable flatbed capacity for lumber, steel, roofing, and other building materials, job site delivery included.',
   },
 ];
