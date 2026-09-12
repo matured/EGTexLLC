@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Phone } from 'lucide-react';
+import { Phone } from '@phosphor-icons/react';
 import { Button } from '../ui/Button';
 import { companyInfo } from '../../data/companyInfo';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
@@ -35,7 +35,7 @@ export function MobileStickyCTA() {
           transition={{ duration: reducedMotion ? 0.15 : 0.3, ease: 'easeOut' }}
         >
           <a href={companyInfo.ceo.phoneHref} className={styles.callButton} aria-label={`Call ${companyInfo.ceo.phone}`}>
-            <Phone size={20} aria-hidden="true" />
+            <Phone size={20} weight="light" aria-hidden="true" />
           </a>
           <Button href="#contact" variant="primary" className={styles.quoteButton}>
             Get a Quote

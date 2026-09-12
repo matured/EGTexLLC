@@ -1,5 +1,5 @@
 // Placeholder service categories — confirm/edit against what EGTex Broker
-// LLC actually offers before launch. Icon names map to lucide-react
+// LLC actually offers before launch. Icon names map to @phosphor-icons/react
 // components. As a freight brokerage, these describe freight we arrange
 // through our carrier network, not equipment we own and operate ourselves.
 
@@ -15,7 +15,7 @@ export const services = [
   },
   {
     id: 'flatbed',
-    icon: 'Boxes',
+    icon: 'Stack',
     title: 'Flatbed Transport',
     description:
       'Open-deck capacity arranged for oversized loads, construction materials, and heavy machinery.',
@@ -42,7 +42,7 @@ export const services = [
   },
   {
     id: 'full-truckload',
-    icon: 'PackageCheck',
+    icon: 'Package',
     title: 'Full Truckload (FTL)',
     description:
       'Dedicated, single-shipper truckloads arranged for maximum security and faster transit.',

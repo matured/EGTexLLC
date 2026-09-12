@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Phone } from 'lucide-react';
+import { Phone } from '@phosphor-icons/react';
 import { companyInfo } from '../../data/companyInfo';
 import styles from './MobileMenu.module.css';
 
@@ -50,7 +50,7 @@ export function MobileMenu({ open, onClose, links, activeId }) {
             ))}
           </ul>
           <a href={companyInfo.ceo.phoneHref} className={styles.callLink} onClick={onClose}>
-            <Phone size={18} aria-hidden="true" />
+            <Phone size={18} weight="light" aria-hidden="true" />
             <span>{companyInfo.ceo.phone}</span>
           </a>
         </motion.div>

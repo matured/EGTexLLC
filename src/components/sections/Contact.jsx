@@ -1,4 +1,4 @@
-import { MapPin, MessageCircle, Phone, ShieldCheck } from 'lucide-react';
+import { MapPin, ChatCircle, Phone, ShieldCheck } from '@phosphor-icons/react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { ContactForm } from './ContactForm';
 import { companyInfo, fullAddress } from '../../data/companyInfo';
@@ -18,21 +18,21 @@ export function Contact() {
           <div className={styles.infoCard}>
             <ul className={styles.infoList}>
               <li>
-                <MapPin size={20} aria-hidden="true" />
+                <MapPin size={20} weight="light" aria-hidden="true" />
                 <div>
                   <strong>Address</strong>
                   <span>{fullAddress}</span>
                 </div>
               </li>
               <li>
-                <Phone size={20} aria-hidden="true" />
+                <Phone size={20} weight="light" aria-hidden="true" />
                 <div>
                   <strong>{companyInfo.ceo.title} — Call</strong>
                   <a href={companyInfo.ceo.phoneHref}>{companyInfo.ceo.phone}</a>
                 </div>
               </li>
               <li>
-                <MessageCircle size={20} aria-hidden="true" />
+                <ChatCircle size={20} weight="light" aria-hidden="true" />
                 <div>
                   <strong>{companyInfo.operationsManager.title} — WhatsApp</strong>
                   <a href={companyInfo.operationsManager.whatsappHref} target="_blank" rel="noreferrer">
@@ -43,7 +43,7 @@ export function Contact() {
             </ul>
 
             <div className={styles.credentials}>
-              <ShieldCheck size={20} aria-hidden="true" />
+              <ShieldCheck size={20} weight="light" aria-hidden="true" />
               <span>
                 DOT: {companyInfo.credentials.dot} &middot; MC: {companyInfo.credentials.mc}
               </span>

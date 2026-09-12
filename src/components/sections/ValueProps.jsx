@@ -1,4 +1,4 @@
-import { Clock, MapPin, ShieldCheck, Users } from 'lucide-react';
+import { Clock, MapPin, ShieldCheck, Users } from '@phosphor-icons/react';
 import { useScrollReveal } from '../../animations/useScrollReveal';
 import styles from './ValueProps.module.css';
 
@@ -33,7 +33,7 @@ export function ValueProps() {
       <div ref={containerRef} className={styles.grid}>
         {VALUES.map(({ icon: Icon, title, description }) => (
           <div key={title} className={`${styles.card} value-reveal`}>
-            <Icon size={26} className={styles.icon} aria-hidden="true" />
+            <Icon size={26} weight="light" className={styles.icon} aria-hidden="true" />
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.description}>{description}</p>
           </div>

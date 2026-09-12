@@ -1,4 +1,4 @@
-import { MapPin, MessageCircle, Phone } from 'lucide-react';
+import { MapPin, ChatCircle, Phone } from '@phosphor-icons/react';
 import logo from '../../assets/logo/egtex-logo-placeholder.svg';
 import { companyInfo, fullAddress } from '../../data/companyInfo';
 import styles from './Footer.module.css';
@@ -24,15 +24,15 @@ export function Footer() {
           <h3>Contact</h3>
           <ul>
             <li>
-              <MapPin size={16} aria-hidden="true" />
+              <MapPin size={16} weight="light" aria-hidden="true" />
               <span>{fullAddress}</span>
             </li>
             <li>
-              <Phone size={16} aria-hidden="true" />
+              <Phone size={16} weight="light" aria-hidden="true" />
               <a href={companyInfo.ceo.phoneHref}>{companyInfo.ceo.phone} ({companyInfo.ceo.title})</a>
             </li>
             <li>
-              <MessageCircle size={16} aria-hidden="true" />
+              <ChatCircle size={16} weight="light" aria-hidden="true" />
               <a href={companyInfo.operationsManager.whatsappHref} target="_blank" rel="noreferrer">
                 {companyInfo.operationsManager.whatsapp} ({companyInfo.operationsManager.title}, WhatsApp)
               </a>

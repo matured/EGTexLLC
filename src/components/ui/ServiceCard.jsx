@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { Boxes, Clock, MapPin, PackageCheck, ShieldCheck, Truck } from 'lucide-react';
+import { Stack, Clock, MapPin, Package, ShieldCheck, Truck } from '@phosphor-icons/react';
 import { cardHover } from '../../animations/revealVariants';
 import styles from './ServiceCard.module.css';
 
-const ICONS = { Truck, Boxes, Clock, MapPin, PackageCheck, ShieldCheck };
+const ICONS = { Truck, Stack, Clock, MapPin, Package, ShieldCheck };
 
 export function ServiceCard({ icon, title, description, className = '' }) {
   const Icon = ICONS[icon] || Truck;
@@ -17,7 +17,7 @@ export function ServiceCard({ icon, title, description, className = '' }) {
       variants={cardHover}
     >
       <div className={styles.iconWrap}>
-        <Icon size={28} strokeWidth={2} aria-hidden="true" />
+        <Icon size={28} weight="light" aria-hidden="true" />
       </div>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
