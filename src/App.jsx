@@ -1,5 +1,6 @@
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
+import { MobileStickyCTA } from './components/layout/MobileStickyCTA';
 import { Hero } from './components/sections/Hero';
 import { ValueProps } from './components/sections/ValueProps';
 import { ServicesTeaser } from './components/sections/ServicesTeaser';
@@ -26,6 +27,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <MobileStickyCTA />
     </>
   );
 }
