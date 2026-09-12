@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { Stack, Clock, MapPin, Package, ShieldCheck, Truck } from '@phosphor-icons/react';
+import { ArrowsOutSimple, Buildings, Stack, Stairs, Truck, Umbrella } from '@phosphor-icons/react';
 import { cardHover } from '../../animations/revealVariants';
 import styles from './ServiceCard.module.css';
 
-const ICONS = { Truck, Stack, Clock, MapPin, Package, ShieldCheck };
+const ICONS = { Stack, Stairs, ArrowsOutSimple, Umbrella, Buildings, Truck };
 
 export function ServiceCard({ icon, title, description, className = '' }) {
   const Icon = ICONS[icon] || Truck;

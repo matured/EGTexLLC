@@ -1,4 +1,4 @@
-import { MapPin, ChatCircle, Phone, ShieldCheck } from '@phosphor-icons/react';
+import { MapPin, ChatCircle, EnvelopeSimple, Phone, ShieldCheck } from '@phosphor-icons/react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { ContactForm } from './ContactForm';
 import { companyInfo, fullAddress } from '../../data/companyInfo';
@@ -11,7 +11,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Get In Touch"
           title="Let’s Get Your Freight Moving"
-          description="Reach out by phone, WhatsApp, or the form below and our team will follow up quickly."
+          description="Reach out by phone, email, WhatsApp, or the form below and our team will follow up quickly."
         />
 
         <div className={styles.grid}>
@@ -38,6 +38,13 @@ export function Contact() {
                   <a href={companyInfo.operationsManager.whatsappHref} target="_blank" rel="noreferrer">
                     {companyInfo.operationsManager.whatsapp}
                   </a>
+                </div>
+              </li>
+              <li>
+                <EnvelopeSimple size={20} weight="light" aria-hidden="true" />
+                <div>
+                  <strong>{companyInfo.owner.name} ({companyInfo.owner.title}) — Email</strong>
+                  <a href={companyInfo.owner.emailHref}>{companyInfo.owner.email}</a>
                 </div>
               </li>
             </ul>
