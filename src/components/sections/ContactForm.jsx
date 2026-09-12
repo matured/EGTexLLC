@@ -75,6 +75,8 @@ export function ContactForm() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit} noValidate>
+      <p className={styles.reassurance}>Takes less than 2 minutes.</p>
+
       <div className={styles.field}>
         <label htmlFor="name">Full Name</label>
         <input
@@ -171,7 +173,8 @@ export function ContactForm() {
       </Button>
 
       <div aria-live="polite" className={styles.status}>
-        {status === 'success' && 'Thanks! Your message has been sent — we will be in touch soon.'}
+        {status === 'success' &&
+          'You’re all set! We’ve got your message and a real person will reach out shortly — thanks for reaching out to EGTex Broker LLC.'}
         {status === 'error' && 'Something went wrong sending your message. Please call or WhatsApp us instead.'}
         {status === 'unconfigured' &&
           'This form is not yet connected to an inbox. Please call or WhatsApp us directly for now.'}
