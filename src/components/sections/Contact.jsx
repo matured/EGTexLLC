@@ -20,7 +20,7 @@ export function Contact() {
               <li>
                 <MapPin size={20} weight="light" aria-hidden="true" />
                 <div>
-                  <strong>Address</strong>
+                  <strong>Location</strong>
                   <span>{fullAddress}</span>
                 </div>
               </li>
