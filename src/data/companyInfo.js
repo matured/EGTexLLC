@@ -9,10 +9,8 @@ export const companyInfo = {
   name: 'EGTex Broker LLC',
   tagline: 'Family-Owned Freight Brokerage',
   address: {
-    line1: '4028 Edgewater Terrace Ln',
     city: 'Waller',
-    state: 'TX',
-    zip: '77484',
+    state: 'Texas',
   },
   ceo: {
     title: 'CEO',
@@ -36,4 +34,4 @@ export const companyInfo = {
   },
 };
 
-export const fullAddress = `${companyInfo.address.line1}, ${companyInfo.address.city}, ${companyInfo.address.state} ${companyInfo.address.zip}`;
+export const fullAddress = `${companyInfo.address.city}, ${companyInfo.address.state}`;
