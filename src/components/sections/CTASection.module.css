@@ -18,6 +18,10 @@
   margin: 0 auto;
 }
 
+.truckAccent {
+  margin: 0 auto var(--space-sm);
+}
+
 .heading {
   color: var(--color-white);
 }

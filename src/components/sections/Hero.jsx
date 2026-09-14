@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Button } from '../ui/Button';
 import { RouteLine } from '../ui/RouteLine';
+import { TruckSilhouette } from '../ui/TruckSilhouette';
 import { initHeroParallax, playHeroEntrance } from '../../animations/heroTimeline';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
 import styles from './Hero.module.css';
@@ -9,6 +10,7 @@ export function Hero() {
   const sectionRef = useRef(null);
   const layerBackRef = useRef(null);
   const layerFrontRef = useRef(null);
+  const truckLayerRef = useRef(null);
   const eyebrowRef = useRef(null);
   const headingRef = useRef(null);
   const subRef = useRef(null);
@@ -23,6 +25,7 @@ export function Hero() {
       [
         { el: layerBackRef.current, speed: 0.25 },
         { el: layerFrontRef.current, speed: 0.5 },
+        { el: truckLayerRef.current, speed: 0.4 },
       ],
       reducedMotion,
     );
@@ -35,6 +38,9 @@ export function Hero() {
       <div ref={layerBackRef} className={styles.layerBack} aria-hidden="true" />
       <div ref={layerFrontRef} className={styles.layerFront} aria-hidden="true">
         <RouteLine mode="scrub" />
+      </div>
+      <div ref={truckLayerRef} className={styles.truckLayer} aria-hidden="true">
+        <TruckSilhouette variant="hero" />
       </div>
 
       <div className={`container ${styles.content}`}>
