@@ -1,3 +1,7 @@
+.truckAccent {
+  margin: 0 auto var(--space-lg);
+}
+
 .grid {
   display: grid;
   gap: var(--space-md);

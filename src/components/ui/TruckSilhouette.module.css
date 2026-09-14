@@ -1,0 +1,106 @@
+.wrapper {
+  pointer-events: none;
+  display: block;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.body {
+  fill: #050d1c;
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1;
+}
+
+.rim {
+  fill: rgba(255, 255, 255, 0.08);
+}
+
+.glass {
+  fill: rgba(154, 165, 177, 0.25);
+}
+
+.cargo {
+  fill: rgba(154, 165, 177, 0.15);
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1;
+}
+
+.strap {
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 2;
+}
+
+.headlightCore {
+  fill: #fff4d6;
+}
+
+.headlightMarker {
+  fill: #fff4d6;
+  opacity: 0.85;
+}
+
+.glow {
+  fill: rgba(255, 244, 214, 0.45);
+}
+
+/* Light tone: for use on dark section backgrounds (e.g. the navy CTA
+   band), where the default near-black silhouette fill would blend
+   straight into the background instead of reading as a shape. */
+.light .body {
+  fill: rgba(255, 255, 255, 0.35);
+  stroke: rgba(255, 255, 255, 0.45);
+}
+
+.light .rim {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.light .cargo {
+  fill: rgba(255, 255, 255, 0.2);
+  stroke: rgba(255, 255, 255, 0.4);
+}
+
+.light .strap {
+  stroke: rgba(255, 255, 255, 0.45);
+}
+
+.light .glass {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+/* Hero: large, cropped by the section's own overflow:hidden so the
+   trailer trails off past the viewport edge and only the cab (with the
+   animated headlights) reads as the focal point. */
+.hero {
+  position: absolute;
+  right: -600px;
+  bottom: -16px;
+  width: 1080px;
+  aspect-ratio: 900 / 240;
+  z-index: 0;
+}
+
+@media (max-width: 1279px) {
+  .hero {
+    right: -500px;
+    width: 900px;
+  }
+}
+
+@media (max-width: 959px) {
+  .hero {
+    display: none;
+  }
+}
+
+/* Accent: small static mark reused in CTASection/Services, no lights. */
+.accent {
+  width: 110px;
+  aspect-ratio: 900 / 240;
+  margin: 0 auto;
+  opacity: 0.55;
+}

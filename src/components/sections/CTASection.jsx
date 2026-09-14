@@ -1,6 +1,7 @@
 import { ChatCircle, Phone } from '@phosphor-icons/react';
 import { Button } from '../ui/Button';
 import { RouteLine } from '../ui/RouteLine';
+import { TruckSilhouette } from '../ui/TruckSilhouette';
 import { companyInfo } from '../../data/companyInfo';
 import styles from './CTASection.module.css';
 
@@ -9,6 +10,7 @@ export function CTASection() {
     <section className={styles.cta}>
       <RouteLine mode="loop" className={styles.routeLine} />
       <div className={`container ${styles.content}`}>
+        <TruckSilhouette variant="accent" tone="light" className={styles.truckAccent} />
         <h2 className={styles.heading}>Ready to Move Your Freight?</h2>
         <p className={styles.sub}>
           Call our CEO directly, or message our Operations Manager on

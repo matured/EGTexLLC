@@ -1,6 +1,7 @@
 import { services } from '../../data/services';
 import { ServiceCard } from '../ui/ServiceCard';
 import { SectionHeading } from '../ui/SectionHeading';
+import { TruckSilhouette } from '../ui/TruckSilhouette';
 import { useScrollReveal } from '../../animations/useScrollReveal';
 import styles from './Services.module.css';
 
@@ -16,6 +17,7 @@ export function Services() {
           description="We specialize in flatbed. Whatever your load needs — standard open-deck or oversized and permitted — we'll line up the right equipment."
           align="center"
         />
+        <TruckSilhouette variant="accent" className={styles.truckAccent} />
         <div ref={containerRef} className={styles.grid}>
           {services.map((service) => (
             <ServiceCard
